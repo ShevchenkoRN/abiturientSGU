@@ -8,7 +8,7 @@
     tools:context=".ui.LoginFragment">
 
     <TextView
-        android:id="@+id/textAuthorization2"
+        android:id="@+id/authLabel"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="143dp"
@@ -17,11 +17,11 @@
         android:text="@string/authorization"
         android:textAlignment="center"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/authUsername"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/authUsername"
         android:layout_width="391dp"
         android:layout_height="50dp"
         android:layout_marginStart="10dp"
@@ -34,7 +34,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPassword2"
+        android:id="@+id/authPassword"
         android:layout_width="391dp"
         android:layout_height="48dp"
         android:layout_marginStart="8dp"
@@ -44,24 +44,24 @@
         android:inputType="textPassword"
         android:minHeight="48dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2" />
+        app:layout_constraintTop_toBottomOf="@+id/authUsername" />
 
     <Button
-        android:id="@+id/buttonLogin2"
+        android:id="@+id/authLogin"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="96dp"
         android:layout_marginTop="20dp"
         android:text="@string/confirm_authorization"
-        app:layout_constraintStart_toStartOf="@id/editTextTextPassword2"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword2" />
+        app:layout_constraintStart_toStartOf="@id/authPassword"
+        app:layout_constraintTop_toBottomOf="@+id/authPassword" />
 
     <Button
-        android:id="@+id/buttonRegister2"
+        android:id="@+id/authRegister"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/register"
-        app:layout_constraintStart_toStartOf="@+id/buttonLogin2"
-        app:layout_constraintTop_toBottomOf="@+id/buttonLogin2" />
+        app:layout_constraintStart_toStartOf="@+id/authLogin"
+        app:layout_constraintTop_toBottomOf="@+id/authLogin" />
 </androidx.constraintlayout.widget.ConstraintLayout>
